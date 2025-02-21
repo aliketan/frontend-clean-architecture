@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Front-end Clean Architecture Template</h1>
 
-<p id="description">This is a basic front-end clean architecture template built with HTML5 CSS &amp; Sass JavaScript Bootstrap 5 and Webpack.</p>
+<p id="description">This is a basic front-end clean architecture template built with HTML5, CSS &amp; Sass, JavaScript, Bootstrap 5, and Webpack.</p>
 
 
 <h2>🛠️ Installation Steps:</h2>
