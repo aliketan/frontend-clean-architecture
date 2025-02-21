@@ -1,0 +1,55 @@
+footer {
+    padding:100px 0px;
+
+    .footer__links {
+
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        
+        &__title {
+            font-family: 'gilroy';
+            color:$color--d9ab41;
+            @include font-size(21);
+            font-weight: 700;
+        }
+
+        ul {
+            margin-top: 30px;
+
+            li {
+                display: block;
+                margin-bottom: 25px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                a {
+                    display: block;
+                    color:$color--white;
+                    @include font-size(15);
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .copyright {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+}
+
+@media (max-width:1366px) { }
+@include media-breakpoint-down(lg)  { }
+@include media-breakpoint-down(md)  { }
+@include media-breakpoint-down(sm)  { }
+@include media-breakpoint-down(def) { }

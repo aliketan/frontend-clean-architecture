@@ -1,0 +1,319 @@
+
+.index {
+
+    .home__slider {
+
+        &__item {
+
+            &__title {
+                color:$color--d9ab41;
+                font-weight: 800;
+                letter-spacing: 6px;
+                position: relative;
+                padding: 0px 0px 0px 100px;
+
+                &:before {
+                    @include content();
+                    @include position-align();
+                    width: 70px;
+                    height: 2px;
+                    left:0px;
+                    background-color: $color--d9ab41;
+                }
+            }
+
+            &__text {
+                @include font-size(64);
+                font-weight: 600;
+                font-family: 'ChronicleDisplay';
+            }
+
+            &__scrollbtn {
+                color:$color--white;
+                @include font-size(13);
+                display: block;
+                text-decoration: none;
+            }
+
+        }
+
+    }
+
+    &__banner {
+
+        padding: 250px 0px;
+
+        &__followus {
+
+            &__title {
+                color: $color--white;
+                transform: rotate(90deg);
+                display: block;
+                margin:0px 0px 48px -24px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 15px;
+
+                    a {
+                        color: $color--white;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            i {
+                @include transition();
+            }
+
+            .icon-instagram:hover {
+                color: #833AB4;
+            }
+
+            .icon-twitter:hover {
+                color: #1DA1F2;
+            }
+        }
+
+        &__pagination {
+            position: fixed;
+            right: 100px;
+            z-index: 233232;
+            ul {
+                position: relative;
+
+                li {
+                    padding:20px 32px 20px 0px;
+                    text-align: right;
+                    position: relative;
+
+                    &:before {
+                        @include content();
+                        width: 3px;
+                        height: 100%;
+                        top:0px;
+                        right: 0px;
+                        background: rgba($color: $color--white, $alpha: 0.5);
+                        z-index: 1;
+                        border-radius: 2px;
+                        transition: 500ms;
+                    }
+
+                    &.active {
+                        &:before {
+                            background: $color--white;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+
+                    a {
+                        color: $color--white;
+                        @include font-size(17);
+                        font-weight: 700;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__blog-list {
+        padding-top: 250px;
+
+        &__item {
+            position: relative;
+            margin-bottom: 50px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+
+            &__number {
+                @include font-size(240);
+                font-weight: 700;
+                opacity: 0.1;
+                position: absolute;
+                left:0px;
+                top: -120px;
+            }
+
+            &__content {
+                padding: 0px 50px 0px 100px;
+            }
+
+            &__toptitle {
+                color:$color--d9ab41;
+                font-weight: 800;
+                letter-spacing: 6px;
+                position: relative;
+                padding: 0px 0px 0px 100px;
+
+                &:before {
+                    @include content();
+                    @include position-align();
+                    width: 70px;
+                    height: 2px;
+                    left:0px;
+                    background-color: $color--d9ab41;
+                }
+            }
+
+            &__title {
+                @include font-size(64);
+                font-weight: 600;
+                font-family: 'ChronicleDisplay';
+            }
+
+            &__readmore {
+                color: $color--d9ab41;
+                font-weight: 600;
+                margin-top: 30px;
+                text-decoration: none;
+                position: relative;
+                display: flex;
+                align-items: center;
+                line-height: 0px;
+
+                i {
+                    @include font-size(11);
+                    margin-left: 10px;
+                }
+            }
+
+            &__img {
+                display: block;
+            }
+        }
+        
+
+        
+
+    }
+
+}
+
+@media (max-width:1366px) { }
+@include media-breakpoint-down(lg)  { }
+@include media-breakpoint-down(md)  { 
+
+    .index {
+
+        &__banner,
+        &__blog-list {
+
+            padding: 100px 0px;
+        }
+
+        .home__slider {
+
+            &__item { 
+                text-align: center;
+
+                &__title {
+                    @include font-size(12);
+                    padding: 0px;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &__text {
+                    @include font-size(43);
+                }
+            }
+
+        }
+
+        &__blog-list {
+
+            &__item {
+                margin-bottom: 100px;
+
+                &__title {
+                    @include font-size(40);
+                }
+
+                &__number {
+                    @include font-size(200);
+                }
+
+                &__content {
+                    padding: 0px;
+                }
+            }
+
+        }
+    }
+    
+}
+@include media-breakpoint-down(sm)  {
+
+    .index {
+
+        &__banner,
+        &__blog-list {
+
+            padding: 100px 0px;
+        }
+
+        .home__slider {
+
+            &__item { 
+                text-align: center;
+
+                &__title {
+                    @include font-size(12);
+                    padding: 0px;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &__text {
+                    @include font-size(43);
+                }
+            }
+
+        }
+
+        &__blog-list {
+
+            &__item {
+                margin-bottom: 50px;
+
+                &__toptitle {
+                    padding-left: 70px;
+
+                    &:before {
+                        width: 50px;
+                    }
+                }
+
+                &__title {
+                    @include font-size(40);
+                }
+
+                &__number {
+                    @include font-size(150);
+                    top: -45px;
+                }
+
+                &__content {
+                    padding-top: 30px;
+                }
+            }
+
+        }
+    }
+ }
+ 
+@include media-breakpoint-down(def) { 
+    
+}
